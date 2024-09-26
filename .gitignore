@@ -1,5 +1,6 @@
-/cloud_functions/runner/__pycache__*
-/cloud_functions/runner/lib*
+/cloud_functions/splitter/__pycache__*
+/cloud_functions/video_dubber/__pycache__*
+/cloud_functions/video_dubber/tmp
 /terraform/.terraform
 /terraform/.terraform*
 /terraform/terraform.tfstate*
