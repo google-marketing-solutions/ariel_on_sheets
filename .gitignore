@@ -1,0 +1,9 @@
+/cloud_functions/runner/__pycache__*
+/cloud_functions/runner/lib*
+/terraform/.terraform
+/terraform/.terraform*
+/terraform/terraform.tfstate*
+/terraform/copycat*
+/terraform/terraform.tfvars.local
+/lib*
+.temp
