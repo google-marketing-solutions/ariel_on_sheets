@@ -63,9 +63,7 @@ resource "google_cloudfunctions2_function" "video_dubber" {
   description = "It runs a ariel execution receiving and input google sheet URL and the name of the sheet with the configuration"
   project     = var.PROJECT_ID
   location    = var.REGION
-  depends_on = [ #null_resource.clone_ariel_repo,
-  google_storage_bucket.ariel_build_bucket,
-  #null_resource.add_ariel_lib,
+  depends_on = [google_storage_bucket.ariel_build_bucket,
   google_storage_bucket_object.video_dubber_object,
   time_sleep.wait_60s]
 
@@ -96,7 +94,6 @@ resource "google_cloudfunctions2_function" "video_dubber" {
       REGION          = var.REGION
       OUTPUT_DIRECTORY  = var.OUTPUT_DIRECTORY
     }
-    #ingress_settings               = "ALLOW_INTERNAL_ONLY"
     all_traffic_on_latest_revision = true
     service_account_email          = google_service_account.sa.email
   }
