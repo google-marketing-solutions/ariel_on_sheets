@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-pandas
-gspread
-google-cloud-logging
+pandas==2.2.2
+gspread==6.1.2
+google-cloud-logging==3.11.0
 google-cloud-pubsub==2.7.0
 functions-framework >= 3.0.0
