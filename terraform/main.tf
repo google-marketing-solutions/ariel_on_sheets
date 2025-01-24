@@ -178,6 +178,20 @@ resource "google_project_iam_member" "aiplatform-admin" {
   member  = "serviceAccount:${google_service_account.sa.email}"
 }
 
+resource "google_project_service" "enable_sheets_api" {
+  project                    = var.PROJECT_ID
+  service                    = "sheets.googleapis.com"
+  disable_dependent_services = true
+  disable_on_destroy         = false
+}
+
+resource "google_project_service" "enable_texttospeech_api" {
+  project                    = var.PROJECT_ID
+  service                    = "texttospeech.googleapis.com"
+  disable_dependent_services = true
+  disable_on_destroy         = false
+}
+
 resource "google_storage_bucket" "ariel_build_bucket" {
   project                     = var.PROJECT_ID
   name                        = "${var.PROJECT_ID}-${var.DEPLOYMENT_NAME}-${var.BUILD_GCS_BUCKET}"
