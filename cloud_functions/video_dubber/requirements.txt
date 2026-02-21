@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-google-cloud-aiplatform==1.60.0
+google-cloud-aiplatform==1.133.0
 pandas==2.2.2
 gspread==6.1.2
 google-cloud-logging==3.11.0
