@@ -14,6 +14,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
+> [!CAUTION]
+> This repository has been archived. It is not being maintained and will receive
+> no updates, including security related ones. Please use at your own risk.
+
 **Disclaimer: This is not an official supported Google product.**
 Please use this tool responsibly. Avoid entering any sensitive or personal data, including your
 own and that of others.
